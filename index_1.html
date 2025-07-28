@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ateliê Fios & Tramas - Bolsas Artesanais de Crochê</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2><i class="fas fa-heart"></i> Fios & Tramas</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#como-comprar" class="nav-link">Como Comprar</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Bolsas Artesanais de Crochê</h1>
+                <p class="hero-subtitle">Peças únicas feitas com amor e dedicação. Cada bolsa conta uma história especial.</p>
+                <div class="hero-buttons">
+                    <a href="#produtos" class="btn btn-primary">Ver Coleção</a>
+                    <a href="#contato" class="btn btn-secondary">Fazer Pedido</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/yujW8024Q7MY.jpg" alt="Bolsas de crochê elegantes">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Sobre o Ateliê</h2>
+                <p>Tradição e modernidade em cada ponto</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Arte que se carrega com estilo</h3>
+                    <p>Há mais de 10 anos criando bolsas artesanais de crochê, combinando técnicas tradicionais com designs modernos. Cada peça é cuidadosamente confeccionada com fios de alta qualidade, garantindo durabilidade e beleza.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <span>Feito com amor</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Materiais sustentáveis</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <span>Qualidade premium</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/Iry3QIHeyMDR.jpg" alt="Processo de criação">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossa Coleção</h2>
+                <p>Descubra a beleza única de cada peça</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/MJqw80HDLpuQ.jpg" alt="Bolsa Clutch Bordô">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openModal('modal1')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Clutch Elegante</h3>
+                        <p>Bolsa de mão perfeita para ocasiões especiais</p>
+                        <div class="price">R$ 89,90</div>
+                        <button class="btn btn-primary" onclick="fazerPedido('Clutch Elegante')">Fazer Pedido</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/EfDd8kwyQPV4.jpeg" alt="Bolsa Grande Azul">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openModal('modal2')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolsa Grande Mesclada</h3>
+                        <p>Espaçosa e versátil para o dia a dia</p>
+                        <div class="price">R$ 129,90</div>
+                        <button class="btn btn-primary" onclick="fazerPedido('Bolsa Grande Mesclada')">Fazer Pedido</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/t1st59ecTVej.jpg" alt="Bolsa Média Nude">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openModal('modal3')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolsa Média Nude</h3>
+                        <p>Sofisticada com detalhes em mosaico</p>
+                        <div class="price">R$ 109,90</div>
+                        <button class="btn btn-primary" onclick="fazerPedido('Bolsa Média Nude')">Fazer Pedido</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/PogML5sFb60C.jpg" alt="Bolsa Rosa Claro">
+                        <div class="product-overlay">
+                            <button class="btn-quick-view" onclick="openModal('modal4')">Ver Detalhes</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolsa Delicada Rosa</h3>
+                        <p>Feminina e romântica para todas as ocasiões</p>
+                        <div class="price">R$ 95,90</div>
+                        <button class="btn btn-primary" onclick="fazerPedido('Bolsa Delicada Rosa')">Fazer Pedido</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Buy Section -->
+    <section id="como-comprar" class="how-to-buy">
+        <div class="container">
+            <div class="section-header">
+                <h2>Como Comprar</h2>
+                <p>Processo simples e seguro</p>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>1. Escolha sua bolsa</h3>
+                    <p>Navegue pela nossa coleção e encontre a peça perfeita para você</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>2. Entre em contato</h3>
+                    <p>Clique em "Fazer Pedido" ou nos chame no WhatsApp para confirmar disponibilidade</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>3. Pagamento</h3>
+                    <p>PIX, cartão de crédito ou débito. Parcelamos em até 3x sem juros</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>4. Receba em casa</h3>
+                    <p>Entregamos em todo o Brasil com rastreamento incluído</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Info Section -->
+    <section class="delivery-info">
+        <div class="container">
+            <div class="delivery-grid">
+                <div class="delivery-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Entrega Rápida</h3>
+                    <p>5-10 dias úteis para todo o Brasil</p>
+                </div>
+                <div class="delivery-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Envio Seguro</h3>
+                    <p>Embalagem cuidadosa e código de rastreamento</p>
+                </div>
+                <div class="delivery-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Garantia</h3>
+                    <p>7 dias para troca em caso de defeito</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que dizem nossas clientes</h2>
+                <p>Depoimentos reais de quem já tem sua bolsa</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Qualidade excepcional! Minha bolsa chegou perfeita e é ainda mais linda pessoalmente."</p>
+                    <div class="testimonial-author">
+                        <strong>Maria Silva</strong>
+                        <span>São Paulo, SP</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Atendimento impecável e produto de altíssima qualidade. Já comprei 3 bolsas!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Costa</strong>
+                        <span>Rio de Janeiro, RJ</span>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Peça única e artesanal. Recebo elogios toda vez que uso minha bolsa!"</p>
+                    <div class="testimonial-author">
+                        <strong>Carla Mendes</strong>
+                        <span>Belo Horizonte, MG</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contato</h2>
+                <p>Estamos aqui para ajudar você</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3>WhatsApp</h3>
+                            <p>(11) 99999-9999</p>
+                            <a href="https://wa.me/5511999999999" class="btn btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Chamar no WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>E-mail</h3>
+                            <p>contato@fiostramas.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Localização</h3>
+                            <p>São Paulo, SP - Brasil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-heart"></i> Fios & Tramas</h3>
+                    <p>Bolsas artesanais de crochê feitas com amor e dedicação.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Atendimento</h4>
+                    <ul>
+                        <li>Segunda a Sexta: 9h às 18h</li>
+                        <li>Sábado: 9h às 14h</li>
+                        <li>WhatsApp: (11) 99999-9999</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Pagamento e Entrega</h4>
+                    <ul>
+                        <li>PIX, Cartão de Crédito/Débito</li>
+                        <li>Parcelamento em até 3x</li>
+                        <li>Entrega em todo o Brasil</li>
+                        <li>Rastreamento incluído</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fios & Tramas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modals -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal1')">&times;</span>
+            <img src="images/MJqw80HDLpuQ.jpg" alt="Clutch Elegante">
+            <h3>Clutch Elegante</h3>
+            <p>Bolsa de mão confeccionada em fio de malha bordô, perfeita para ocasiões especiais. Possui fecho magnético e alça removível.</p>
+            <ul>
+                <li>Material: Fio de malha premium</li>
+                <li>Dimensões: 25cm x 15cm x 5cm</li>
+                <li>Cor: Bordô</li>
+                <li>Fecho: Magnético</li>
+            </ul>
+            <div class="modal-price">R$ 89,90</div>
+            <button class="btn btn-primary" onclick="fazerPedido('Clutch Elegante')">Fazer Pedido</button>
+        </div>
+    </div>
+
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal2')">&times;</span>
+            <img src="images/EfDd8kwyQPV4.jpeg" alt="Bolsa Grande Mesclada">
+            <h3>Bolsa Grande Mesclada</h3>
+            <p>Bolsa espaçosa em tons de azul mesclado, ideal para o dia a dia. Possui alças confortáveis e compartimento interno.</p>
+            <ul>
+                <li>Material: Fio eco confort</li>
+                <li>Dimensões: 40cm x 30cm x 15cm</li>
+                <li>Cor: Azul mesclado</li>
+                <li>Alças: Duplas reforçadas</li>
+            </ul>
+            <div class="modal-price">R$ 129,90</div>
+            <button class="btn btn-primary" onclick="fazerPedido('Bolsa Grande Mesclada')">Fazer Pedido</button>
+        </div>
+    </div>
+
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal3')">&times;</span>
+            <img src="images/t1st59ecTVej.jpg" alt="Bolsa Média Nude">
+            <h3>Bolsa Média Nude</h3>
+            <p>Bolsa sofisticada em tom nude com detalhes em mosaico e tassel. Versátil e elegante para diversas ocasiões.</p>
+            <ul>
+                <li>Material: Fio premium</li>
+                <li>Dimensões: 30cm x 25cm x 10cm</li>
+                <li>Cor: Nude</li>
+                <li>Detalhes: Mosaico e tassel</li>
+            </ul>
+            <div class="modal-price">R$ 109,90</div>
+            <button class="btn btn-primary" onclick="fazerPedido('Bolsa Média Nude')">Fazer Pedido</button>
+        </div>
+    </div>
+
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal4')">&times;</span>
+            <img src="images/PogML5sFb60C.jpg" alt="Bolsa Delicada Rosa">
+            <h3>Bolsa Delicada Rosa</h3>
+            <p>Bolsa feminina em tom rosa claro, delicada e romântica. Perfeita para looks casuais e especiais.</p>
+            <ul>
+                <li>Material: Fio de algodão</li>
+                <li>Dimensões: 28cm x 22cm x 8cm</li>
+                <li>Cor: Rosa claro</li>
+                <li>Estilo: Romântico</li>
+            </ul>
+            <div class="modal-price">R$ 95,90</div>
+            <button class="btn btn-primary" onclick="fazerPedido('Bolsa Delicada Rosa')">Fazer Pedido</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
